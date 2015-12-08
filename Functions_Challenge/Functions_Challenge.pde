@@ -46,9 +46,12 @@ float usingKineticEquation (float x, float y, char value) {
 }
 
 void design (){
+  fill (random(0,255), random(0,255), random(0,255));
   ellipse (random (width), random (height), random (50, 100), random (50, 100));
-  
-  
-  
+  fill (255);
+  rect(200, 100,100,100);
+  rect(500, 100, 100, 100);
+  rect(350, 250, 100, 100);
+  arc (width/2, 400, 350, 300, 0, PI,CHORD );  
   
 }
