@@ -42,7 +42,7 @@ float usingKineticEquation (float x, float y, char value) {
     return answer;
   }
   println("Make a valid choice");
-  return 90;
+  return 0;
 }
 
 void design (){
@@ -53,5 +53,8 @@ void design (){
   rect(500, 100, 100, 100);
   rect(350, 250, 100, 100);
   arc (width/2, 400, 350, 300, 0, PI,CHORD );  
-  
+  if (mousePressed){
+    background (255, 0, 0);
+    ellipse (mouseX, mouseY, 50, 50);
+  }
 }
