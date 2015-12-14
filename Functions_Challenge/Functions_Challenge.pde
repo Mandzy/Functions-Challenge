@@ -5,7 +5,7 @@ void setup() {
 void draw () {
   println (findMissingSide (30, 90, 'c'));
   println (usingKineticEquation (20, 30, 'k'));
-  design ();
+  design (random (width), random (height), random (50, 100));
 }
 
 
@@ -45,9 +45,9 @@ float usingKineticEquation (float x, float y, char value) {
   return 0;
 }
 
-void design (){
+void design (float x, float y, float diam){
   fill (random(0,255), random(0,255), random(0,255));
-  ellipse (random (width), random (height), random (50, 100), random (50, 100));
+  ellipse (x, y, diam, diam);
   fill (255);
   rect(200, 100,100,100);
   rect(500, 100, 100, 100);
